@@ -1,0 +1,31 @@
+.headerContainer
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 1.3rem 2rem
+    position: fixed
+    background: #cea696
+    z-index: 9
+    align-items: center
+
+    & img
+        width: 100px
+        @media(max-width: 500px)
+            display: none
+    & nav
+        width: 165px
+
+        & ul
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            & li
+                font-weight: bold
+                font-size: .9rem
+                cursor: pointer
+
+                &:hover
+                    text-decoration: underline
+
+

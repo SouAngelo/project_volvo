@@ -1,0 +1,99 @@
+.container
+    width: 100vw
+    height: 76vh
+    padding: 1rem 0
+    display: flex
+    @media(max-width: 500px)
+        flex-direction: column
+        align-items: center
+
+.options
+    border-right: 1px solid #ddd
+    margin-right: 2rem
+    padding: .5rem 2.3rem
+    width: 15%
+    min-width: 180px
+    @media(max-width: 500px)
+        border-right: 0
+        border-bottom: 1px solid #ddd
+        text-align: center
+        margin-bottom: 2rem
+
+    & h1
+        font-size: 1.2rem
+        margin-bottom: 5px
+
+    & p
+        margin-bottom: 3rem
+        font-size: 13px
+        color: #a1a1a1
+
+.models
+    padding: .5rem 5rem
+    width: 85%
+    position: relative
+    @media(max-width: 500px)
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    & h2
+        color: #838383
+        font-size: .8rem
+        font-weight: 600
+        text-transform: uppercase
+        letter-spacing: 2px
+        margin-bottom: 2rem
+
+.hybrid, .eletric
+    cursor: pointer
+
+.carsContainer
+    width: 100%
+
+.carContainer
+    width: 100%
+    display: flex
+    gap: 3rem
+    flex-wrap: wrap
+    @media(max-width: 500px)
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+.car
+    display: flex
+    flex-direction: column
+    cursor: pointer
+    padding: 1rem
+    transition: all .4s
+
+    &:hover
+        background: #f8f8f8
+
+    & h1
+        font-size: 1rem
+        font-weight: 600
+        margin-bottom: 1rem
+
+    & img
+        width: 136px
+        margin-bottom: 2rem
+
+    & span
+        font-size: .7rem
+        font-weight: 700
+        border: 1px solid #b8b8b8
+        padding: 7px 15px
+        background: #f8f8f8
+        color: #242424
+
+.close
+    position: absolute
+    top: 30px
+    right: 3rem
+    font-size: 2rem
+    font-weight: normal
+    cursor: pointer
+    color: #181818

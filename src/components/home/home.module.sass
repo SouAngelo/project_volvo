@@ -1,0 +1,425 @@
+.container
+    width: 100%
+    height: 100vh
+    padding-top: 60px
+
+.headerContent
+    width: 100%
+    height: 100%
+    position: relative
+    @media(max-width: 600px)
+        height: 90%
+
+    & video
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.contentVolvo
+    position: absolute
+    top: 70%
+    left: 16%
+    right: auto
+    bottom: auto
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    text-align: left
+    color: #fff
+    @media(max-width: 980px)
+        left: 25%
+    @media(max-width: 615px)
+        left: 50%
+        top: 18%
+        text-align: center
+
+    & p
+        font-size: 1.1rem
+        font-weight: bold
+        margin-bottom: .5rem
+        @media(max-width: 615px)
+            font-size: 1.3rem
+
+    & h2
+        font-size: 2rem
+        margin-bottom: 1.5rem
+        @media(max-width: 615px)
+            font-size: 2.5rem
+
+    & span
+        font-size: .9rem
+        font-weight: bold
+        cursor: pointer
+        transition: ease-out .2s
+        background: #fff
+        color: #000
+        padding: 10px 2rem
+        border-radius: 5px
+
+        &:hover
+            background-color: #a7a7a7
+
+.carouselCars
+    width: 100%
+    min-height: 100vh
+    margin-top: 2rem
+    padding: 4rem
+    position: relative
+    @media(max-width: 600px)
+        padding: 2rem
+
+    & h1
+        color: #a5a5a5
+        width: 50%
+        font-size: 2rem
+        text-align: center
+        margin: auto
+        margin-bottom: 2rem
+        @media(max-width: 900px)
+            width: 80%
+        @media(max-width: 600px)
+            width: 100%
+            font-size: 1.5rem
+
+        & span
+            color: #000
+
+.containerCar
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.demoCar:nth-child(1)
+    width: 100%
+    max-height: 530px
+    margin-bottom: 1.6rem
+    @media(max-width: 600px)
+        height: 230px
+        margin-bottom: .7rem
+
+    & img
+        width: 100%
+        height: 100%
+
+.demoCar:nth-child(2), .demoCar:nth-child(3)
+    width: 49%
+    max-height: 400px
+    @media(max-width: 600px)
+        height: 180px
+
+    & img
+        width: 100%
+        height: 100%
+
+.demoCar
+
+    & img
+        cursor: pointer
+
+.carModels
+    width: 100%
+    margin-top: 2rem
+    @media(max-width: 700px)
+        margin-top: -10rem
+
+    & h2
+        text-align: center
+        font-size: 2rem
+
+    & nav
+        margin: auto
+        width: 200px
+        margin-top: 3rem
+        display: flex
+        justify-content: space-between
+
+        & li
+            font-size: 1.1rem
+            cursor: pointer
+
+            &:hover
+                color: #000 !important
+
+.modelsContainer
+    width: 100%
+    display: flex
+    margin-top: 4rem
+    justify-content: center
+    flex-wrap: wrap
+
+.carContainer
+    width: 320px
+    height: 400px
+    cursor: pointer
+    @media(max-width: 600px)
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &:hover
+        & img
+            transform: scale(1.1)
+
+        & h3, p, span
+            color: #2631ce
+
+    & h3
+        font-size: .8rem
+        color: #8f8f8f
+        text-transform: uppercase
+        margin-bottom: 1rem
+
+    & p
+        margin-bottom: 1rem
+        font-weight: bold
+
+        & span
+            color: #8f8f8f
+            font-weight: normal
+            transition: ease-out .3s
+
+.image
+    width: 260px
+    height: 200px
+    background: #ddd
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+
+    & img
+        width: 100%
+        transition: ease-out .3s
+
+    & span
+        position: absolute
+        left: 15px
+        top: 15px
+        font-size: .7rem
+        background: #fff
+        padding: 4px .8rem
+        border: 1px solid #b3b3b3
+        color: #616161 !important
+        border-radius: 5px
+        font-weight: bold
+
+
+.information 
+    width: 80% 
+    display: flex 
+    justify-content: space-around
+    margin-top: 1rem
+
+    & p 
+        color: #2631ce
+
+        &:hover
+             color: #444444
+
+.volvoCopy
+    width: 100% 
+    min-height: 100% 
+    margin-top: 5rem
+    padding-bottom: 2rem
+    margin-bottom: 3rem
+
+    & a 
+        background: #fff
+        border: 1px solid #2a609d
+        padding: 1rem 1.7rem
+        border-radius: 5px
+        font-size: .9rem
+        color: #2a609d
+        font-weight: bold
+        transition: ease-in-out .3s
+        cursor: pointer
+        
+        &:hover
+            color: #fff 
+            background: #2a609d
+            
+.containerCopy 
+    width: 90%
+    height: 100%
+    margin: auto
+    padding: .2rem
+    background: #fafafa
+    display: flex 
+    flex-direction: column 
+    align-items: center
+    padding-top: 4rem
+    padding-bottom: 4rem
+
+    & h4 
+        font-size: 2rem
+        text-align: center
+        margin-bottom: 4rem
+        
+    & img
+        width: 98%
+        margin-bottom: 2rem
+
+.containerCards
+    width: 98%
+    height: 100%
+    display: flex
+    flex-wrap: wrap 
+    justify-content: space-between
+    margin-bottom: 2rem
+    @media(max-width: 1203px)
+        justify-content: space-around
+  
+.card
+    width: 350px
+    margin-bottom: 2rem
+    @media(max-width: 1203px)
+        text-align: justify
+        background: #f7f5f5
+        padding: 10px
+        border-radius: 5px
+    @media(max-width: 800px)
+        width: 98%
+
+    & h1 
+        margin-bottom: 1rem
+        font-size: 1.2rem
+        
+    & p 
+        line-height: 28px
+        color: #979797
+        font-size: .9rem
+
+.homeFooter
+    width: 100% 
+    min-height: 100%
+
+.containerInformation
+    width: 90%
+    display: flex
+    justify-content: space-between 
+    flex-wrap: wrap
+    margin: auto
+    @media(max-width: 670px)
+        justify-content: center
+
+.cardCar
+    width: 49%
+    min-width: 300px
+    margin-left: 5px
+    text-align: center
+    @media(max-width: 670px)
+        margin-left: 0 
+        width: 100%
+        margin-bottom: 3rem
+
+    & img
+         width: 100%
+         margin-bottom: 2rem
+
+    & h2 
+        font-size: 1.8rem
+        margin-bottom: 2rem
+
+    & button 
+        background: #fff
+        border: 1px solid #2a609d
+        padding: 1rem 1.7rem
+        border-radius: 5px
+        font-size: .9rem
+        color: #2a609d
+        font-weight: bold
+        transition: ease-in-out .3s
+
+        &:hover
+            color: #fff 
+            background: #2a609d
+            
+.containerVolvo
+    margin-top: 4rem
+    padding-top: 6rem
+    width: 100% 
+    min-height: 100%
+    display: flex
+    justify-content: center
+    position: relative
+    padding-bottom: 3rem
+    @media(max-width: 700px)
+        padding: 0 2rem
+        padding-top: 1rem
+
+    & img 
+       width: 90%
+       height: 500px
+       @media(max-width: 890px)
+        height: 400px
+       @media(max-width: 700px)
+        width: 100%
+
+.contentVolvo 
+    position: absolute
+    top: 52%
+    left: 21%
+    width: 250px
+    @media(max-width: 890px)
+        left: 30%
+    @media(max-width: 700px)
+        top: 50%
+        left: auto 
+        right: auto
+        text-align: center
+        width: 50%
+       
+    & h1 
+        font-size: 1.8rem
+        margin-bottom: 1.2rem
+
+    & button 
+        background: #fff 
+        border: 0 
+        font-size: .9rem 
+        padding: 1rem 1.7rem
+        border-radius: 5px
+        font-weight: bold
+        transition: ease-out .2s
+
+        &:hover
+            background: #ffffff67
+
+.links
+    width: 55%
+    margin: auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 4rem
+
+    & h1 
+        margin-bottom: 2rem
+        font-size: 1rem
+
+.linksContainer
+    width: 100% 
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 30px
+   
+.link
+    width: 45%
+    margin-bottom: 2rem
+    @media(max-width: 550px)
+        width: 100%
+        margin-bottom: 0
+
+    & p 
+        width: 100% 
+        height: 50px
+        display: flex 
+        justify-content: space-between
+        border-top: 1px solid #2a609d
+        padding: 10px
+        color: #2a609d
+        cursor: pointer
+
+        &:hover
+            color: #000
